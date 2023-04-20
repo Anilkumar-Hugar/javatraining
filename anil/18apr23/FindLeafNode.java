@@ -12,14 +12,6 @@ public class FindLeafNode {
 		}
 	}
 
-	public void traverseInOrder(Node node) {
-		if (node != null) {
-			traverseInOrder(node.leftNode);
-			System.out.print(" " + node.value);
-			traverseInOrder(node.rightNode);
-		}
-	}
-
 	public static void main(String[] args) {
 		FindLeafNode findLeafNode = new FindLeafNode();
 		Node node = new Node(1);
